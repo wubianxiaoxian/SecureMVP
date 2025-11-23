@@ -7,7 +7,25 @@
 		<key>SecureMVP.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SecureMVPAutofill.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8F6DDF252EC81B7000784631</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F6DE3E12EC8D7B100784631</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

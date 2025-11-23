@@ -58,6 +58,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F6DE3FF2EC8D88800784631 /* Exceptions for "SecureMVPAutofill" folder in "SecureMVP" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CredentialListView.swift,
+				CredentialProviderViewController.swift,
+				ExtensionUnlockView.swift,
+			);
+			target = 8F6DDF252EC81B7000784631 /* SecureMVP */;
+		};
 		8F6DE4022EC8D8C600784631 /* Exceptions for "SecureMVP" folder in "SecureMVPAutofill" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -69,13 +78,6 @@
 				Core/Crypto/VaultEncryptionEngine.swift,
 				Core/Storage/KeychainManager.swift,
 				Core/Storage/VaultManager.swift,
-			);
-			target = 8F6DE3E12EC8D7B100784631 /* SecureMVPAutofill */;
-		};
-		8F6DE4032EC8D8C700784631 /* Exceptions for "SecureMVPAutofill" folder in "SecureMVPAutofill" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
 			);
 			target = 8F6DE3E12EC8D7B100784631 /* SecureMVPAutofill */;
 		};
@@ -103,7 +105,7 @@
 		8F6DE3E62EC8D7B200784631 /* SecureMVPAutofill */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8F6DE4032EC8D8C700784631 /* Exceptions for "SecureMVPAutofill" folder in "SecureMVPAutofill" target */,
+				8F6DE3FF2EC8D88800784631 /* Exceptions for "SecureMVPAutofill" folder in "SecureMVP" target */,
 			);
 			path = SecureMVPAutofill;
 			sourceTree = "<group>";
@@ -451,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -508,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -540,7 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.securemvp.app;
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SecureMVP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -574,7 +576,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.securemvp.app;
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SecureMVP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -592,7 +594,8 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kent.sun.SecureMVPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,7 +615,8 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kent.sun.SecureMVPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -631,6 +635,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kent.sun.SecureMVPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -649,6 +654,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kent.sun.SecureMVPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -669,20 +675,24 @@
 				CODE_SIGN_ENTITLEMENTS = SecureMVPAutofill/SecureMVPAutofill.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 59CUVY9P2X;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecureMVPAutofill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SecureMVPAutofill;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.securemvp.app.SecureMVPAutofill;
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SecureMVP.SecureMVPAutofill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SecureMVPAutofill/SecureMVPAutofill-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -697,20 +707,24 @@
 				CODE_SIGN_ENTITLEMENTS = SecureMVPAutofill/SecureMVPAutofill.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 59CUVY9P2X;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecureMVPAutofill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SecureMVPAutofill;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.securemvp.app.SecureMVPAutofill;
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SecureMVP.SecureMVPAutofill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SecureMVPAutofill/SecureMVPAutofill-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
